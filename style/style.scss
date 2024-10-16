@@ -1,0 +1,44 @@
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  font-family: "Figtree", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  .logo-img {
+    width: 200px;
+  }
+
+  nav {
+    align-content: center;
+
+    li {
+      display: inline;
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+      color: $text-color;
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+    }
+    a:hover {
+        color: $secondary-color;
+    }
+    a:active {
+        font-weight:600;
+    }
+  }
+}

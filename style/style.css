@@ -6,19 +6,19 @@
 }
 
 body {
-  max-width: 1200px;
+  margin: 0 auto;
   font-family: "Figtree", sans-serif;
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 15px 10% 0px;
+  margin: 0 auto;
 }
 header .logo-img {
-  width: 200px;
-}
-header nav {
-  align-content: center;
+  width: 50px;
 }
 header nav li {
   display: inline;
@@ -30,10 +30,19 @@ header nav a {
   text-align: center;
   padding: 20px;
   font-size: 20px;
+  font-weight: 400;
 }
 header nav a:hover {
   color: rgb(45, 106, 79);
 }
-header nav a:active {
-  font-weight: 600;
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
+main .hero-img {
+  max-width: 1200px;
+  border-radius: 30px;
+  padding-top: 10px;
 }/*# sourceMappingURL=style.css.map */

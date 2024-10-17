@@ -175,4 +175,32 @@ footer nav a:hover {
   border-bottom: 1px solid;
   padding-bottom: 5px;
   border-color: rgb(232, 244, 239);
+}
+
+main h2 {
+  text-align: center;
+  padding: 40px;
+  color: rgb(27, 67, 50);
+}
+main .plants-catalog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+main .plants-catalog .plant-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+main .plants-catalog .plant-card h3,
+main .plants-catalog .plant-card p {
+  color: rgb(27, 67, 50);
+  padding: 5px;
+  border-top-left-radius: 30px;
+}
+main .plants-catalog .plant-card img {
+  width: 250px;
+  height: 300px;
 }/*# sourceMappingURL=augalu-katalogas.css.map */

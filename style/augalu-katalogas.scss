@@ -2,3 +2,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 @import "style";
 
+main {
+  h2 {
+    text-align: center;
+    padding: 40px;
+    color: $primary-color;
+  }
+
+  .plants-catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+
+    .plant-card {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+
+      h3,
+      p {
+        color: $primary-color;
+        padding: 5px;
+        border-top-left-radius: 30px;
+      }
+
+      img {
+        width: 250px;
+        height: 300px;
+      }
+    }
+  }
+}

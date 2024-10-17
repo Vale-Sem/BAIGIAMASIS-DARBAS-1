@@ -18,6 +18,7 @@ header {
   align-items: center;
   padding: 0 10%;
   margin: 15px 0px;
+
   .logo-container {
     display: flex;
     align-items: center;
@@ -53,12 +54,16 @@ header {
       text-decoration: none;
       color: $text-color;
       text-align: center;
-      padding: 20px;
+      padding-bottom: 5px;
+      margin: 0 20px;
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 500;
+      transition: transform 0.3s ease;
     }
     a:hover {
       color: $secondary-color;
+      border-bottom: 1px solid;
+      padding-bottom: 5px;
     }
   }
 }
@@ -78,43 +83,84 @@ main {
     height: 400px; /* arba nustatyk norimą aukštį */
     position: relative;
     border-radius: 30px;
-  }
+    padding-left: 10%;
+    align-content: center;
 
-  .services {
-    margin-top: 40px;
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      -webkit-backdrop-filter: blur(3px);
+      backdrop-filter: blur(5px);
+      width: 300px;
+      padding: 30px;
+      background-color: rgba(177, 193, 176, 0.633);
+      border-radius: 10px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      &:hover {
+        transform: translateY(-3px);
+      }
 
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 20px;
-
-      .service-card {
-        background-color: $lightgreen-color;
-        text-align: center;
-        padding: 40px 60px;
-        margin-bottom: 20px;
+      p {
+        font-size: 30px;
+      }
+      .strong-text {
+        padding-top: 10px;
+      }
+      .buttom {
+        text-decoration: none;
+        color: $lightgreen-color;
+        padding: 10px;
         border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
+        background-color: $primary-color;
+        font-size: 20px;
+        margin-top: 20px;
 
         &:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          transform: translateY(-3px);
+          background-color: $secondary-color;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
-        h2 {
-          text-align: center;
-          margin-bottom: 20px;
-          color: $primary-color;
-        }
-        h3 {
-          color: $primary-color;
-          margin-bottom: 10px;
-        }
+      }
+    }
+  }
+}
 
-        p {
-          color: $text-color;
-        }
+.services {
+  margin-top: 40px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+
+    .service-card {
+      background-color: $lightgreen-color;
+      text-align: center;
+      padding: 40px 60px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+      h3 {
+        color: $primary-color;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: $text-color;
       }
     }
   }
@@ -135,14 +181,16 @@ footer {
     }
     a {
       text-decoration: none;
-      color: $white-color;
+      color: $lightgreen-color;
       text-align: center;
-      padding: 20px;
+      margin: 0 20px;
       font-size: 15px;
       font-weight: 300;
     }
     a:hover {
-      text-decoration: line-through;
+      border-bottom: 1px solid;
+      padding-bottom: 5px;
+      border-color: $lightgreen-color;
     }
   }
 }

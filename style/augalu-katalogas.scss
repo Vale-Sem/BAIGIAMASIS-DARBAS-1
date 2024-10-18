@@ -3,34 +3,46 @@
 @import "style";
 
 main {
-  h2 {
-    text-align: center;
-    padding: 40px;
-    color: $primary-color;
-  }
+  section {
+    background-color: $lightgreen-color;
+    border-radius: 30px;
 
-  .plants-catalog {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-
-    .plant-card {
-      display: flex;
-      flex-direction: column;
+    h2 {
       text-align: center;
-      padding: 20px;
+      padding-top: 30px;
+      color: $primary-color;
+    }
 
-      h3,
-      p {
-        color: $primary-color;
-        padding: 5px;
-        border-top-left-radius: 30px;
-      }
+    .plants-catalog {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
 
-      img {
-        width: 250px;
-        height: 300px;
+      .plant-card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        height:
+
+        .card-text {
+          display: flex;
+          flex-direction: column;
+          padding: 10px 10px;
+        }
+
+        img {
+          width: 250px;
+
+          height: 100%;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          object-fit: cover;
+        }
       }
     }
   }

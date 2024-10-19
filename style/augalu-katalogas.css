@@ -199,8 +199,7 @@ main section .plants-catalog .plant-card {
   margin: 20px;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  height: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 main section .plants-catalog .plant-card .card-text {
   display: flex;

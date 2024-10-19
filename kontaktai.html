@@ -23,6 +23,37 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section class="contact-form">
+        <img src="/images/contact-us.jpg" alt="">
+        <form
+          action="https://formspree.io/f/mwpkkgdn"
+          method="POST"
+        >
+        <div>
+          <label for="name">Jusų vardas:</label>
+            <input id="name" type="text" name="name" />
+        </div>
+        
+        <div>
+          <label for="surname">Jusų pavardė:</label>
+            <input id="surname" type="text" name="surname" />
+        </div>
+          
+        <div>
+          <label for="email">El. paštas:</label>
+            <input id="email" type="email" name="email" placeholder="Įrašykite el. paštą..." required />
+        </div>
+  
+        <div>
+          <label for="textarea">Tekstas:</label></p>
+          <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
+        </div>
+  
+          <button type="submit">Siųsti</button>
+        </form>
+      </section>
+    </main>
     <footer>
       <nav>
         <ul>

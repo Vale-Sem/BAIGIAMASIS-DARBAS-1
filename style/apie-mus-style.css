@@ -177,18 +177,39 @@ footer nav a:hover {
   border-color: rgb(232, 244, 239);
 }
 
-.abaut-us {
+main .abaut-us {
+  display: flex;
   margin-top: 20px;
   text-align: center;
+  align-items: center;
+  background-color: rgb(232, 244, 239);
+  border-radius: 30px;
 }
-.abaut-us h2 {
+main .abaut-us .abaut-us-img {
+  max-width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+main .abaut-us .abaut-us-text h2 {
   text-align: center;
   color: rgb(27, 67, 50);
-  margin-bottom: 10px;
 }
-.abaut-us P {
-  background-color: rgb(232, 244, 239);
-  padding: 40px 60px;
-  border-radius: 10px;
+main .abaut-us .abaut-us-text h1 {
   font-size: 20px;
+  padding: 30px 70px;
+  text-align: center;
+}
+main .abaut-us .abaut-us-text P {
+  line-height: 1.5;
+  padding: 20px 70px;
+  font-size: 20px;
+  text-align: justify;
+}
+main .abaut-us .abaut-us-text .abaut-us-icon {
+  padding-top: 70px;
+  width: 70px;
+  opacity: 0.3;
 }/*# sourceMappingURL=apie-mus-style.css.map */

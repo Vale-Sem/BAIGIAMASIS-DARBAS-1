@@ -175,4 +175,9 @@ footer nav a:hover {
   border-bottom: 1px solid;
   padding-bottom: 5px;
   border-color: rgb(232, 244, 239);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=kontaktai.css.map */

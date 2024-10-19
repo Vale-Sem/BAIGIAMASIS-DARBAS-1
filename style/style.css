@@ -139,7 +139,6 @@ main .hero-img .hero-text .buttom:hover {
   transition: transform 0.3s ease;
 }
 .services .grid-container .service-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 .services .grid-container .service-card h3 {

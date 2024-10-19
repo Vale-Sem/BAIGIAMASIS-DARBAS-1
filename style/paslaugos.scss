@@ -1,3 +1,49 @@
 @import "variables";
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 @import "style";
+
+.services-page {
+  margin-top: 40px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: $lightgreen-color;
+    background-color: $primary-color;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .grid-container1 {
+    display: flex;
+    flex-direction: column;
+    .service-card {
+      background-color: $lightgreen-color;
+      text-align: center;
+      padding: 40px 200px 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+      img {
+        width: 30px;
+        opacity: 0.3;
+        padding-top: 25px;
+      }
+
+      h3 {
+        color: $primary-color;
+        margin-bottom: 30px;
+        font-size: 25px;
+      }
+
+      p {
+        color: $text-color;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}

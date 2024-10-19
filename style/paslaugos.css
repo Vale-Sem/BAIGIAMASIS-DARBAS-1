@@ -140,7 +140,6 @@ main .hero-img .hero-text .buttom:hover {
   transition: transform 0.3s ease;
 }
 .services .grid-container .service-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 .services .grid-container .service-card h3 {
@@ -175,4 +174,45 @@ footer nav a:hover {
   border-bottom: 1px solid;
   padding-bottom: 5px;
   border-color: rgb(232, 244, 239);
+}
+
+.services-page {
+  margin-top: 40px;
+}
+.services-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(232, 244, 239);
+  background-color: rgb(27, 67, 50);
+  padding: 20px;
+  border-radius: 10px;
+}
+.services-page .grid-container1 {
+  display: flex;
+  flex-direction: column;
+}
+.services-page .grid-container1 .service-card {
+  background-color: rgb(232, 244, 239);
+  text-align: center;
+  padding: 40px 200px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.services-page .grid-container1 .service-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.services-page .grid-container1 .service-card img {
+  width: 30px;
+  opacity: 0.3;
+  padding-top: 25px;
+}
+.services-page .grid-container1 .service-card h3 {
+  color: rgb(27, 67, 50);
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+.services-page .grid-container1 .service-card p {
+  color: hsl(0, 0%, 10%);
+  padding-bottom: 15px;
 }/*# sourceMappingURL=paslaugos.css.map */

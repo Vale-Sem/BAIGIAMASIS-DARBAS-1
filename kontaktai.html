@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paslaugos naminiams augalams.</title>
-    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/kontaktai.css" />
   </head>
   <body>
     <header>
@@ -25,33 +25,37 @@
     </header>
     <main>
       <section class="contact-form">
-        <img src="/images/contact-us.jpg" alt="">
+      <img class="contact-us-img" src="/images/contact-us.jpg" alt="">
+      <div>
         <form
           action="https://formspree.io/f/mwpkkgdn"
           method="POST"
         >
-        <div>
-          <label for="name">Jusų vardas:</label>
-            <input id="name" type="text" name="name" />
-        </div>
-        
-        <div>
-          <label for="surname">Jusų pavardė:</label>
-            <input id="surname" type="text" name="surname" />
-        </div>
+        <h2>Susisiekite su mumis!</h2>
+
+          <div>
+            <label for="name">Jusų vardas:</label>
+              <input id="name" type="text" name="name" placeholder="Įrašykite vardą.." required />
+          </div>
           
-        <div>
-          <label for="email">El. paštas:</label>
-            <input id="email" type="email" name="email" placeholder="Įrašykite el. paštą..." required />
-        </div>
+          <div>
+            <label for="surname">Jusų pavardė:</label>
+              <input id="surname" type="text" name="surname" placeholder="Įrašykite pavardę..." required />
+          </div>
+            
+          <div>
+            <label for="email">El. paštas:</label>
+              <input id="email" type="email" name="email" placeholder="Įrašykite el. paštą..." required />
+          </div>
+    
+          <div>
+            <label for="textarea">Tekstas:</label></p>
+            <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Įrašykite tekstą..." required></textarea>
+          </div>
   
-        <div>
-          <label for="textarea">Tekstas:</label></p>
-          <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
-        </div>
-  
-          <button type="submit">Siųsti</button>
+        <button type="submit">Siųsti</button>
         </form>
+      </div>
       </section>
     </main>
     <footer>

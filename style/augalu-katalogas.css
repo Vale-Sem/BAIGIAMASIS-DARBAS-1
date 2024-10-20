@@ -251,10 +251,11 @@ footer nav a:hover {
 main section {
   background-color: rgb(232, 244, 239);
   border-radius: 30px;
+  padding: 15px;
 }
 main section h2 {
   text-align: center;
-  padding-top: 30px;
+  padding: 30px 0;
   color: rgb(27, 67, 50);
 }
 main section .plants-catalog {
@@ -267,7 +268,7 @@ main section .plants-catalog .plant-card {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 20px;
+  padding: 0px 15px;
   background-color: white;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -275,21 +276,26 @@ main section .plants-catalog .plant-card {
 main section .plants-catalog .plant-card .card-text {
   display: flex;
   flex-direction: column;
-  padding: 10px 10px;
+  padding: 10px 0px;
 }
 main section .plants-catalog .plant-card img {
   width: 100%;
-  height: 100%;
+  height: 350px;
+  margin-bottom: 10px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  transform: 0.3 ease;
+}
+main section .plants-catalog .plant-card a:hover {
+  opacity: 70%;
 }
 
 @media (max-width: 768px) {
   main section .plants-catalog {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 300px);
     grid-template-rows: auto;
     gap: 20px;
   }

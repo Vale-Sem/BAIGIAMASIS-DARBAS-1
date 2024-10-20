@@ -17,6 +17,11 @@ header {
   align-items: center;
   padding: 0 10%;
   margin: 15px 0px;
+  /* Burger meniu mobiliesiems įrenginiams */
+  /* Meniu pagal nutylėjimą paslėptas */
+  /* Kai burger mygtukas pažymėtas, rodyti meniu */
+  /* Media queries - burger meniu rodomas mažesniuose ekranuose */
+  /* Pridėta perėjimo animacija */
 }
 header .logo-container {
   display: flex;
@@ -58,6 +63,56 @@ header nav a:hover {
   color: rgb(45, 106, 79);
   border-bottom: 1px solid;
   padding-bottom: 5px;
+}
+header .burger-container {
+  display: none; /* Paslėpta pagal nutylėjimą */
+  position: relative;
+}
+header .burger-container #burger-toggle {
+  display: block;
+  opacity: 0;
+}
+header .burger-container img {
+  width: 30px;
+}
+header .burger-nav {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: rgb(232, 244, 239);
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+header .burger-nav ul {
+  list-style: none;
+}
+header .burger-nav ul a {
+  text-decoration: none;
+  display: block;
+  color: rgb(27, 67, 50);
+  padding: 10px;
+  font-size: 18px;
+}
+header #burger-toggle:checked ~ .burger-nav {
+  display: block;
+}
+@media (max-width: 768px) {
+  header .header-nav {
+    display: none; /* Slėpti įprastą meniu mobiliuosiuose įrenginiuose */
+  }
+  header .burger-container {
+    display: block;
+    z-index: 1;
+  }
+}
+header .burger-nav {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+header #burger-toggle:checked ~ .burger-nav {
+  opacity: 1;
 }
 
 main {
@@ -151,7 +206,9 @@ main .hero-img .hero-text .buttom:hover {
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 10%;
   margin: 0px 10%;
   border-radius: 10px;

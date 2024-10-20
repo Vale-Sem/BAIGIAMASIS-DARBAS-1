@@ -18,6 +18,12 @@ header {
   align-items: center;
   padding: 0 10%;
   margin: 15px 0px;
+  /* Burger meniu mobiliesiems įrenginiams */
+  /* Kai burger mygtukas įjungtas (checkbox pažymėtas) */
+  /* Meniu pagal nutylėjimą paslėptas */
+  /* Kai burger mygtukas pažymėtas, rodyti meniu */
+  /* Media queries - burger meniu rodomas mažesniuose ekranuose */
+  /* Pridėta perėjimo animacija */
 }
 header .logo-container {
   display: flex;
@@ -59,6 +65,73 @@ header nav a:hover {
   color: rgb(45, 106, 79);
   border-bottom: 1px solid;
   padding-bottom: 5px;
+}
+header .burger-container {
+  display: none; /* Paslėpta pagal nutylėjimą */
+  position: relative;
+}
+header .burger-container .burger-icon {
+  display: block;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+header .burger-container .burger-icon .line {
+  background-color: rgb(27, 67, 50);
+  height: 4px;
+  width: 100%;
+  margin: 6px 0;
+  transition: all 0.3s;
+}
+header #burger-toggle:checked + .burger-icon .line:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+header #burger-toggle:checked + .burger-icon .line:nth-child(2) {
+  opacity: 0;
+}
+header #burger-toggle:checked + .burger-icon .line:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+header .burger-nav {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: lightblue;
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+header .burger-nav ul {
+  list-style: none;
+}
+header .burger-nav ul a {
+  text-decoration: none;
+  display: block;
+  color: rgb(27, 67, 50);
+  padding: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}
+header #burger-toggle:checked ~ .burger-nav {
+  display: block;
+}
+@media (max-width: 768px) {
+  header header .header-nav {
+    display: none; /* Slėpti įprastą meniu mobiliuosiuose įrenginiuose */
+  }
+  header .burger-container {
+    display: block;
+    z-index: 1;
+  }
+}
+header .burger-nav {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+header #burger-toggle:checked ~ .burger-nav {
+  opacity: 1;
 }
 
 main {
@@ -194,7 +267,7 @@ footer nav a:hover {
 .services-page .grid-container1 .service-card {
   background-color: rgb(232, 244, 239);
   text-align: center;
-  padding: 40px 200px 20px;
+  padding: 40px 15% 20px;
   margin-bottom: 20px;
   border-radius: 10px;
   transition: transform 0.3s ease;

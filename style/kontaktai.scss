@@ -6,7 +6,6 @@ main {
   .contact-us-img {
     height: 350px;
     width: 350px;
-    object-fit: cover;
     border-radius: 50%;
   }
 
@@ -19,8 +18,8 @@ main {
     padding: 50px;
     border-radius: 30px;
 
-    h2{
-        color: $primary-color;
+    h2 {
+      color: $primary-color;
     }
 
     label {
@@ -51,6 +50,32 @@ main {
       &:hover {
         background-color: $secondary-color;
       }
+    }
+  }
+
+  /* Media queries - burger meniu rodomas mažesniuose ekranuose */
+  @media (max-width: 768px) {
+    .contact-form {
+      img {
+        padding-bottom: 30px;
+      }
+      h2 {
+        text-align: center;
+      }
+      button {
+        width: 100%;
+      }
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header-nav {
+      display: none; /* Slėpti įprastą meniu mobiliuosiuose įrenginiuose */
+    }
+
+    .burger-container {
+      display: block;
+      z-index: 1;
     }
   }
 }

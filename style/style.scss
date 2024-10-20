@@ -66,7 +66,75 @@ header {
       padding-bottom: 5px;
     }
   }
+
+/* Burger meniu mobiliesiems įrenginiams */
+.burger-container{
+  display: none; /* Paslėpta pagal nutylėjimą */
+  position: relative;
+
+  #burger-toggle {
+    display: block;
+    opacity: 0;
+  }
+  img{
+    width: 30px;
 }
+  }
+
+
+
+  /* Meniu pagal nutylėjimą paslėptas */
+  .burger-nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color:$lightgreen-color;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+    ul {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        display: block;
+        color: $primary-color;
+        padding: 10px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  /* Kai burger mygtukas pažymėtas, rodyti meniu */
+  #burger-toggle:checked ~ .burger-nav {
+    display: block;
+  }
+
+  /* Media queries - burger meniu rodomas mažesniuose ekranuose */
+  @media (max-width: 768px) {
+    .header-nav {
+      display: none; /* Slėpti įprastą meniu mobiliuosiuose įrenginiuose */
+    }
+
+    .burger-container {
+      display: block;
+      z-index: 1;
+    }
+  }
+
+  /* Pridėta perėjimo animacija */
+  .burger-nav {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  #burger-toggle:checked ~ .burger-nav {
+    opacity: 1;
+  }
+}
+
 main {
   padding: 0 10%;
   display: flex;
@@ -167,7 +235,9 @@ main {
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 10%;
   margin: 0px 10%;
   border-radius: 10px;

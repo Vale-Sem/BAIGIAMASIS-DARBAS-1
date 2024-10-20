@@ -67,21 +67,19 @@ header {
     }
   }
 
-/* Burger meniu mobiliesiems įrenginiams */
-.burger-container{
-  display: none; /* Paslėpta pagal nutylėjimą */
-  position: relative;
+  /* Burger meniu mobiliesiems įrenginiams */
+  .burger-container {
+    display: none; /* Paslėpta pagal nutylėjimą */
+    position: relative;
 
-  #burger-toggle {
-    display: block;
-    opacity: 0;
+    #burger-toggle {
+      display: block;
+      opacity: 0;
+    }
+    img {
+      width: 30px;
+    }
   }
-  img{
-    width: 30px;
-}
-  }
-
-
 
   /* Meniu pagal nutylėjimą paslėptas */
   .burger-nav {
@@ -89,7 +87,7 @@ header {
     position: absolute;
     top: 50px;
     right: 0;
-    background-color:$lightgreen-color;
+    background-color: $lightgreen-color;
     width: 200px;
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -234,10 +232,7 @@ main {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   padding: 15px 10%;
   margin: 0px 10%;
   border-radius: 10px;
@@ -261,5 +256,28 @@ footer {
       padding-bottom: 5px;
       border-color: $lightgreen-color;
     }
+  }
+}
+@media (max-width: 768px) {
+  main {
+    .hero-img {
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .services .grid-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  footer ul {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:10px;
+    
   }
 }

@@ -207,7 +207,9 @@ main .hero-img .hero-text .buttom:hover {
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 10%;
   margin: 0px 10%;
   border-radius: 10px;

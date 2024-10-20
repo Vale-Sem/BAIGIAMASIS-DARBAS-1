@@ -37,10 +37,35 @@ main {
       }
 
       .abaut-us-icon {
-        padding-top: 70px;
+        padding-top: 50px;
         width: 70px;
         opacity: 0.3;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .abaut-us {
+    display: flex;
+    flex-direction: column;
+
+    .abaut-us-img {
+      height: 300px;
+      width: 300px;
+      border-radius: 30px;
+      margin: 40px;
+    }
+
+    .abaut-us-icon {
+      padding: 10px;
+      margin: 30px;
+    }
+  }
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
   }
 }

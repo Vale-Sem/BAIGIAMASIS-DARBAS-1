@@ -19,7 +19,6 @@ header {
   padding: 0 10%;
   margin: 15px 0px;
   /* Burger meniu mobiliesiems įrenginiams */
-  /* Kai burger mygtukas įjungtas (checkbox pažymėtas) */
   /* Meniu pagal nutylėjimą paslėptas */
   /* Kai burger mygtukas pažymėtas, rodyti meniu */
   /* Media queries - burger meniu rodomas mažesniuose ekranuose */
@@ -70,35 +69,19 @@ header .burger-container {
   display: none; /* Paslėpta pagal nutylėjimą */
   position: relative;
 }
-header .burger-container .burger-icon {
+header .burger-container #burger-toggle {
   display: block;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  position: relative;
-}
-header .burger-container .burger-icon .line {
-  background-color: rgb(27, 67, 50);
-  height: 4px;
-  width: 100%;
-  margin: 6px 0;
-  transition: all 0.3s;
-}
-header #burger-toggle:checked + .burger-icon .line:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
-}
-header #burger-toggle:checked + .burger-icon .line:nth-child(2) {
   opacity: 0;
 }
-header #burger-toggle:checked + .burger-icon .line:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
+header .burger-container img {
+  width: 30px;
 }
 header .burger-nav {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 50px;
   right: 0;
-  background-color: lightblue;
+  background-color: rgb(232, 244, 239);
   width: 200px;
   padding: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -112,13 +95,12 @@ header .burger-nav ul a {
   color: rgb(27, 67, 50);
   padding: 10px;
   font-size: 18px;
-  border-bottom: 1px solid #ccc;
 }
 header #burger-toggle:checked ~ .burger-nav {
   display: block;
 }
 @media (max-width: 768px) {
-  header header .header-nav {
+  header .header-nav {
     display: none; /* Slėpti įprastą meniu mobiliuosiuose įrenginiuose */
   }
   header .burger-container {
@@ -224,8 +206,7 @@ main .hero-img .hero-text .buttom:hover {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 15px 10%;
   margin: 0px 10%;
   border-radius: 10px;
@@ -249,6 +230,24 @@ footer nav a:hover {
   border-color: rgb(232, 244, 239);
 }
 
+@media (max-width: 768px) {
+  main .hero-img {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .services .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+}
 main section {
   background-color: rgb(232, 244, 239);
   border-radius: 30px;
@@ -279,10 +278,25 @@ main section .plants-catalog .plant-card .card-text {
   padding: 10px 10px;
 }
 main section .plants-catalog .plant-card img {
-  width: 250px;
+  width: 100%;
   height: 100%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  main section .plants-catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=augalu-katalogas.css.map */

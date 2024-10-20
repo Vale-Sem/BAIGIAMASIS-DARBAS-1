@@ -34,8 +34,7 @@ main {
         }
 
         img {
-          width: 250px;
-
+          width: 100%;
           height: 100%;
           border-bottom-left-radius: 20px;
           border-bottom-right-radius: 20px;
@@ -43,5 +42,22 @@ main {
         }
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  main section .plants-catalog{
+    display: grid;
+    grid-template-columns: (1fr 1fr);
+    grid-template-rows: (auto);
+    gap: 20px;
+    
+  }
+
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 10px;
   }
 }

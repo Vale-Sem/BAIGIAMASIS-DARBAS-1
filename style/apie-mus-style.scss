@@ -69,3 +69,13 @@ main {
     gap: 10px;
   }
 }
+
+@media (max-width: 425px) {
+
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+}

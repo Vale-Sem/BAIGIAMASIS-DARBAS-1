@@ -251,7 +251,7 @@ footer nav a:hover {
 main section {
   background-color: rgb(232, 244, 239);
   border-radius: 30px;
-  padding: 15px;
+  padding: 20px;
 }
 main section h2 {
   text-align: center;
@@ -282,8 +282,7 @@ main section .plants-catalog .plant-card img {
   width: 100%;
   height: 350px;
   margin-bottom: 10px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
   transform: 0.3 ease;
@@ -303,6 +302,14 @@ main section .plants-catalog .plant-card a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+}
+@media (max-width: 425px) {
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     gap: 10px;
   }
 }/*# sourceMappingURL=augalu-katalogas.css.map */

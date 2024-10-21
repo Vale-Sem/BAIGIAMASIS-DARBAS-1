@@ -208,8 +208,6 @@ main .hero-img .hero-text .buttom:hover {
 footer {
   text-align: center;
   padding: 15px 10%;
-  margin: 0px 10%;
-  border-radius: 10px;
   background-color: rgb(27, 67, 50);
 }
 footer nav li {

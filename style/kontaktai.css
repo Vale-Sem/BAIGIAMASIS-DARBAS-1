@@ -299,7 +299,7 @@ main .contact-form button:hover {
 
 @media (max-width: 426px) {
   main {
-    padding: 0;
+    padding: 1%;
   }
   main h2 {
     text-align: center;

@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 10%;
-  margin: 15px 0px;
+  margin: 20px 0px;
   /* Burger meniu mobiliesiems įrenginiams */
   /* Meniu pagal nutylėjimą paslėptas */
   /* Kai burger mygtukas pažymėtas, rodyti meniu */
@@ -184,7 +184,7 @@ main .hero-img .hero-text .buttom:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 20px;
+  gap: 5%;
 }
 .services .grid-container .service-card {
   background-color: rgb(232, 244, 239);
@@ -241,10 +241,30 @@ footer nav a:hover {
     display: flex;
     flex-direction: column;
   }
+  footer {
+    margin: 0;
+  }
   footer ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+}
+@media (max-width: 426px) {
+  main {
+    padding: 1%;
+  }
+  main .grid-container1 {
+    padding: 5%;
+  }
+  footer {
+    margin: 0;
+  }
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     gap: 10px;
   }
 }
@@ -300,7 +320,7 @@ main .abaut-us .abaut-us-text .abaut-us-icon {
 }
 @media (max-width: 426px) {
   main {
-    padding: 0px;
+    padding: 1%;
   }
   main .abaut-us {
     display: flex;

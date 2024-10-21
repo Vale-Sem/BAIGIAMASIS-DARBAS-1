@@ -283,3 +283,24 @@ footer {
     }
   }
 }
+
+@media (max-width: 426px) {
+  main {
+    padding: 1%;
+
+    .grid-container1 {
+      padding: 5%;
+    }
+  }
+
+  footer {
+    margin: 0;
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 10px;
+    }
+  }
+}

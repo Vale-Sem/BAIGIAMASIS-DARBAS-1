@@ -117,7 +117,7 @@ header #burger-toggle:checked ~ .burger-nav {
 }
 
 main {
-  padding: 0 7%;
+  padding: 0 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,7 +141,7 @@ main .hero-img .hero-text {
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(5px);
   width: 300px;
-  padding: 10%;
+  padding: 30px;
   background-color: rgba(177, 193, 176, 0.633);
   border-radius: 10px;
   text-align: center;
@@ -311,7 +311,7 @@ main section .plants-catalog .plant-card a:hover {
 }
 @media (max-width: 426px) {
   main {
-    padding: 0;
+    padding: 1%;
   }
   main section {
     background-color: rgb(232, 244, 239);

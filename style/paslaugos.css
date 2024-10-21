@@ -251,6 +251,23 @@ footer nav a:hover {
     gap: 10px;
   }
 }
+@media (max-width: 426px) {
+  main {
+    padding: 1%;
+  }
+  main .grid-container1 {
+    padding: 5%;
+  }
+  footer {
+    margin: 0;
+  }
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+}
 .services-page {
   margin-top: 40px;
 }
@@ -310,7 +327,7 @@ footer nav a:hover {
 }
 @media (max-width: 426px) {
   main {
-    padding: 0;
+    padding: 1%;
   }
   main .grid-container1 {
     padding: 5%;

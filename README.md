@@ -22,3 +22,6 @@ Urban Jungle is a website designed to offer various services related to indoor p
 ---
 
 Urban Jungle's goal is to offer professional plant services and stylish solutions for decorating homes or offices with plants.
+
+
+baigiamasis-darbas-1.vercel.app

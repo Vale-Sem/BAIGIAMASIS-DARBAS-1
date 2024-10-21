@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 10%;
-  margin: 15px 0px;
+  margin: 20px 0px;
   /* Burger meniu mobiliesiems įrenginiams */
   /* Meniu pagal nutylėjimą paslėptas */
   /* Kai burger mygtukas pažymėtas, rodyti meniu */
@@ -184,7 +184,7 @@ main .hero-img .hero-text .buttom:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 20px;
+  gap: 5%;
 }
 .services .grid-container .service-card {
   background-color: rgb(232, 244, 239);
@@ -206,10 +206,7 @@ main .hero-img .hero-text .buttom:hover {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   padding: 15px 10%;
   margin: 0px 10%;
   border-radius: 10px;
@@ -233,12 +230,30 @@ footer nav a:hover {
   border-color: rgb(232, 244, 239);
 }
 
-main {
-  /* Media queries - burger meniu rodomas mažesniuose ekranuose */
+@media (max-width: 768px) {
+  main .hero-img {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .services .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    margin: 0;
+  }
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
 }
 main .contact-us-img {
-  height: 350px;
-  width: 350px;
+  height: 30%;
+  width: 30%;
   border-radius: 50%;
 }
 main .contact-form {
@@ -247,7 +262,7 @@ main .contact-form {
   width: 100%;
   justify-content: space-evenly;
   background-color: rgb(232, 244, 239);
-  padding: 50px;
+  padding: 3%;
   border-radius: 30px;
 }
 main .contact-form h2 {
@@ -281,25 +296,33 @@ main .contact-form button {
 main .contact-form button:hover {
   background-color: rgb(45, 106, 79);
 }
-@media (max-width: 768px) {
+
+@media (max-width: 426px) {
+  main {
+    padding: 0;
+  }
+  main h2 {
+    text-align: center;
+    padding: 5%;
+  }
+  main .contact-us-img {
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+  }
   main .contact-form {
     display: flex;
     flex-direction: column;
+    padding: 10% 10% 20%;
   }
-  main .contact-form img {
-    padding-bottom: 30px;
-  }
-  main .contact-form h2 {
-    text-align: center;
+  main .contact-form .contact-us-img {
+    width: 80%;
+    padding-bottom: 5%;
   }
   main .contact-form button {
     width: 100%;
   }
-  main .header-nav {
-    display: none; /* Slėpti įprastą meniu mobiliuosiuose įrenginiuose */
-  }
-  main .burger-container {
-    display: block;
-    z-index: 1;
+  main .contact-form button:hover {
+    background-color: rgb(45, 106, 79);
   }
 }/*# sourceMappingURL=kontaktai.css.map */

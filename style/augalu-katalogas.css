@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 10%;
-  margin: 15px 0px;
+  margin: 20px 0px;
   /* Burger meniu mobiliesiems įrenginiams */
   /* Meniu pagal nutylėjimą paslėptas */
   /* Kai burger mygtukas pažymėtas, rodyti meniu */
@@ -117,7 +117,7 @@ header #burger-toggle:checked ~ .burger-nav {
 }
 
 main {
-  padding: 0 10%;
+  padding: 0 7%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,7 +141,7 @@ main .hero-img .hero-text {
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(5px);
   width: 300px;
-  padding: 30px;
+  padding: 10%;
   background-color: rgba(177, 193, 176, 0.633);
   border-radius: 10px;
   text-align: center;
@@ -184,7 +184,7 @@ main .hero-img .hero-text .buttom:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 20px;
+  gap: 5%;
 }
 .services .grid-container .service-card {
   background-color: rgb(232, 244, 239);
@@ -241,34 +241,38 @@ footer nav a:hover {
     display: flex;
     flex-direction: column;
   }
+  footer {
+    margin: 0;
+  }
   footer ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     gap: 10px;
   }
 }
 main section {
   background-color: rgb(232, 244, 239);
   border-radius: 30px;
-  padding: 20px;
+  padding: 3%;
 }
 main section h2 {
   text-align: center;
-  padding: 30px 0;
+  padding-bottom: 3%;
   color: rgb(27, 67, 50);
 }
 main section .plants-catalog {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
+  gap: 3%;
 }
 main section .plants-catalog .plant-card {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 0px 15px;
+  justify-content: flex-end;
+  padding: 0 10px;
   background-color: white;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -300,12 +304,61 @@ main section .plants-catalog .plant-card a:hover {
   }
   footer ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     gap: 10px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 426px) {
+  main {
+    padding: 0;
+  }
+  main section {
+    background-color: rgb(232, 244, 239);
+    border-radius: 30px;
+    padding: 3% 15%;
+  }
+  main section h2 {
+    text-align: center;
+    padding: 5%;
+    color: rgb(27, 67, 50);
+  }
+  main section .plants-catalog {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+  main section .plants-catalog .plant-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  main section .plants-catalog .plant-card .card-text {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+  main section .plants-catalog .plant-card img {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transform: 0.3 ease;
+  }
+  main section .plants-catalog .plant-card a:hover {
+    opacity: 70%;
+  }
+  footer {
+    margin: 0;
+  }
   footer ul {
     display: grid;
     grid-template-columns: 1fr;

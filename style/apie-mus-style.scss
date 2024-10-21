@@ -19,26 +19,27 @@ main {
     }
 
     .abaut-us-text {
-      h2 {
-        text-align: center;
-        color: $primary-color;
-      }
+      padding: 10%;
 
       h1 {
-        font-size: 20px;
-        padding: 30px 70px;
         text-align: center;
+        color: $primary-color;
+        padding-bottom: 10%;
+      }
+
+      h2 {
+        text-align: center;
+        padding-bottom: 10%;
       }
       P {
         line-height: 1.5;
-        padding: 20px 70px;
         font-size: 20px;
         text-align: justify;
       }
 
       .abaut-us-icon {
         padding-top: 50px;
-        width: 70px;
+        width: 10%;
         opacity: 0.3;
       }
     }
@@ -49,18 +50,6 @@ main {
   .abaut-us {
     display: flex;
     flex-direction: column;
-
-    .abaut-us-img {
-      height: 300px;
-      width: 300px;
-      border-radius: 30px;
-      margin: 40px;
-    }
-
-    .abaut-us-icon {
-      padding: 10px;
-      margin: 30px;
-    }
   }
   footer ul {
     display: grid;
@@ -70,12 +59,30 @@ main {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
+  main {
+    padding: 0px;
 
-  footer ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
+    .abaut-us {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      background-color: $lightgreen-color;
+      border-radius: 30px;
+
+      .abaut-us-img {
+        display: none;
+      }
+    }
+  }
+
+  footer {
+    margin: 0;
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
   }
 }

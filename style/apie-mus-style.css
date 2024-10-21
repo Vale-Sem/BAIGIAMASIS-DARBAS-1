@@ -263,24 +263,26 @@ main .abaut-us .abaut-us-img {
   border-bottom-left-radius: 30px;
   border-top-left-radius: 30px;
 }
-main .abaut-us .abaut-us-text h2 {
-  text-align: center;
-  color: rgb(27, 67, 50);
+main .abaut-us .abaut-us-text {
+  padding: 10%;
 }
 main .abaut-us .abaut-us-text h1 {
-  font-size: 20px;
-  padding: 30px 70px;
   text-align: center;
+  color: rgb(27, 67, 50);
+  padding-bottom: 10%;
+}
+main .abaut-us .abaut-us-text h2 {
+  text-align: center;
+  padding-bottom: 10%;
 }
 main .abaut-us .abaut-us-text P {
   line-height: 1.5;
-  padding: 20px 70px;
   font-size: 20px;
   text-align: justify;
 }
 main .abaut-us .abaut-us-text .abaut-us-icon {
   padding-top: 50px;
-  width: 70px;
+  width: 10%;
   opacity: 0.3;
 }
 
@@ -289,16 +291,6 @@ main .abaut-us .abaut-us-text .abaut-us-icon {
     display: flex;
     flex-direction: column;
   }
-  .abaut-us .abaut-us-img {
-    height: 300px;
-    width: 300px;
-    border-radius: 30px;
-    margin: 40px;
-  }
-  .abaut-us .abaut-us-icon {
-    padding: 10px;
-    margin: 30px;
-  }
   footer ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -306,11 +298,26 @@ main .abaut-us .abaut-us-text .abaut-us-icon {
     gap: 10px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 426px) {
+  main {
+    padding: 0px;
+  }
+  main .abaut-us {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(232, 244, 239);
+    border-radius: 30px;
+  }
+  main .abaut-us .abaut-us-img {
+    display: none;
+  }
+  footer {
+    margin: 0;
+  }
   footer ul {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     gap: 10px;
   }
 }/*# sourceMappingURL=apie-mus-style.css.map */

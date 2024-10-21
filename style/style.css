@@ -98,7 +98,7 @@ header .burger-nav ul a {
 header #burger-toggle:checked ~ .burger-nav {
   display: block;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   header .header-nav {
     display: none; /* Slėpti įprastą meniu mobiliuosiuose įrenginiuose */
   }

@@ -111,7 +111,7 @@ header {
   }
 
   /* Media queries - burger meniu rodomas mažesniuose ekranuose */
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .header-nav {
       display: none; /* Slėpti įprastą meniu mobiliuosiuose įrenginiuose */
     }

@@ -99,7 +99,7 @@ header .burger-nav ul a {
 header #burger-toggle:checked ~ .burger-nav {
   display: block;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   header .header-nav {
     display: none; /* Slėpti įprastą meniu mobiliuosiuose įrenginiuose */
   }
@@ -271,7 +271,6 @@ footer nav a:hover {
 main .abaut-us {
   display: flex;
   text-align: center;
-  align-items: center;
   background-color: rgb(232, 244, 239);
   border-radius: 30px;
 }
@@ -280,8 +279,8 @@ main .abaut-us .abaut-us-img {
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
-  border-bottom-left-radius: 30px;
-  border-top-left-radius: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 main .abaut-us .abaut-us-text {
   padding: 10%;
@@ -307,6 +306,9 @@ main .abaut-us .abaut-us-text .abaut-us-icon {
 }
 
 @media (max-width: 768px) {
+  .abaut-us-img {
+    display: none;
+  }
   .abaut-us {
     display: flex;
     flex-direction: column;
